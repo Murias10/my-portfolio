@@ -1,7 +1,12 @@
-import React from 'react';
+import { useEffect } from 'react'; // Importa el hook useEffect
 import './Home.css'; // Si quieres usar estilos personalizados
 
 function Home() {
+
+    useEffect(() => {
+        document.title = "Home - My Portfolio";
+    }, []); // Se ejecuta una vez cuando el componente se monta
+
     return (
         <section className="home">
             <div className="intro">

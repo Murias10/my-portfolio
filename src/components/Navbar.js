@@ -5,10 +5,14 @@ import './Navbar.css'; // Optional: Navbar styles
 function Navbar() {
     return (
         <nav className="navbar">
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/projects">Projects</Link></li>
+            <ul className="navbar-list">
+
+                <li className="navbar-item">
+                    <Link className="navbar-link active" to="/">About</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link className="navbar-link" to="/projects">Portfolio</Link>
+                </li>
             </ul>
         </nav>
     );
