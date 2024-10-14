@@ -1,17 +1,17 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './components/About';
 import Projects from './components/Projects';
-import Navbar from './components/Navbar'; // Optional: For navigation links
+import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
-import './App.css'; // Optional: Main CSS styles for the app
+import './App.css';
 
 function App() {
   return (
     <Router>
       <main>
-        <Sidebar /> {/* Optional sidebar */}
+        <Sidebar />
         <div className='main-content'>
-          <Navbar /> {/* Optional navigation bar */}
+          <Navbar />
           <Routes>
             <Route path="/" element={<About />} />
             <Route path="/projects" element={<Projects />} />

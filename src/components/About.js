@@ -1,5 +1,15 @@
 import { useEffect } from "react";
 import "./About.css";
+import avatar1 from '../assets/avatar-1.png';
+import avatar2 from '../assets/avatar-2.png';
+import avatar3 from '../assets/avatar-3.png';
+import avatar4 from '../assets/avatar-4.png';
+import logo1 from '../assets/logo-1-color.png';
+import logo2 from '../assets/logo-2-color.png';
+import logo3 from '../assets/logo-3-color.png';
+import logo4 from '../assets/logo-4-color.png';
+import logo5 from '../assets/logo-5-color.png';
+import logo6 from '../assets/logo-6-color.png';
 
 function About() {
 
@@ -116,7 +126,7 @@ function About() {
                         <div class="content-card" data-testimonials-item>
 
                             <figure class="testimonials-avatar-box">
-                                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar />
+                                <img src={avatar1} alt="Daniel lewis" width="60" data-testimonials-avatar />
                             </figure>
 
                             <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
@@ -138,54 +148,10 @@ function About() {
                         <div class="content-card" data-testimonials-item>
 
                             <figure class="testimonials-avatar-box">
-                                <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar />
+                                <img src={avatar2} alt="Jessica miller" width="60" data-testimonials-avatar />
                             </figure>
 
                             <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                            <div class="testimonials-text" data-testimonials-text>
-                                <p>
-                                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                                    lot of experience
-                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                                    consectetur adipiscing
-                                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                                </p>
-                            </div>
-
-                        </div>
-                    </li>
-
-                    <li class="testimonials-item">
-                        <div class="content-card" data-testimonials-item>
-
-                            <figure class="testimonials-avatar-box">
-                                <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar />
-                            </figure>
-
-                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                            <div class="testimonials-text" data-testimonials-text>
-                                <p>
-                                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                                    lot of experience
-                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                                    consectetur adipiscing
-                                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                                </p>
-                            </div>
-
-                        </div>
-                    </li>
-
-                    <li class="testimonials-item">
-                        <div class="content-card" data-testimonials-item>
-
-                            <figure class="testimonials-avatar-box">
-                                <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar />
-                            </figure>
-
-                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
 
                             <div class="testimonials-text" data-testimonials-text>
                                 <p>
@@ -254,37 +220,25 @@ function About() {
 
                     <li class="clients-item">
                         <a href="#">
-                            <img src="./assets/images/logo-1-color.png" alt="client logo" />
+                            <img src={logo1} alt="client logo" />
                         </a>
                     </li>
 
                     <li class="clients-item">
                         <a href="#">
-                            <img src="./assets/images/logo-2-color.png" alt="client logo" />
+                            <img src={logo2} alt="client logo" />
                         </a>
                     </li>
 
                     <li class="clients-item">
                         <a href="#">
-                            <img src="./assets/images/logo-3-color.png" alt="client logo" />
+                            <img src={logo3} alt="client logo" />
                         </a>
                     </li>
 
                     <li class="clients-item">
                         <a href="#">
-                            <img src="./assets/images/logo-4-color.png" alt="client logo" />
-                        </a>
-                    </li>
-
-                    <li class="clients-item">
-                        <a href="#">
-                            <img src="./assets/images/logo-5-color.png" alt="client logo" />
-                        </a>
-                    </li>
-
-                    <li class="clients-item">
-                        <a href="#">
-                            <img src="./assets/images/logo-6-color.png" alt="client logo" />
+                            <img src={logo4} alt="client logo" />
                         </a>
                     </li>
 

@@ -1,115 +1,115 @@
 import './Sidebar.css';
+import myAvatar from '../assets/my-avatar.png';
+
+
+import { IonIcon } from '@ionic/react';
+import { logoFacebook, logoTwitter, logoInstagram, chevronDown, mailOutline, phonePortraitOutline, calendarOutline, locationOutline } from 'ionicons/icons';
 
 const Sidebar = () => {
     return (
-        <aside class="sidebar" data-sidebar>
+        <aside className="sidebar" data-sidebar>
 
-            <div class="sidebar-info">
+            <div className="sidebar-info">
 
-                <figure class="avatar-box">
-                    <img src=".\..\..\public\my-avatar.png" alt="Richard hanrick" width="80" />
+                <figure className="avatar-box">
+                    <img src={myAvatar} alt="Diego Murias Suárez" width="80" />
                 </figure>
 
-                <div class="info-content">
-                    <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+                <div className="info-content">
+                    <h1 className="name" title="Diego Murias Suárez">Diego Murias Suárez</h1>
 
-                    <p class="title">Web developer</p>
+                    <p className="title">Developer</p>
                 </div>
 
-                <button class="info_more-btn" data-sidebar-btn>
+                <button className="info_more-btn" data-sidebar-btn>
                     <span>Show Contacts</span>
-
-                    <ion-icon name="chevron-down"></ion-icon>
+                    <IonIcon icon={chevronDown} />
                 </button>
 
             </div>
 
-            <div class="sidebar-info_more">
+            <div className="sidebar-info_more">
 
-                <div class="separator"></div>
+                <div className="separator"></div>
 
-                <ul class="contacts-list">
+                <ul className="contacts-list">
 
-                    <li class="contact-item">
+                    <li className="contact-item">
 
-                        <div class="icon-box">
-                            <ion-icon name="mail-outline"></ion-icon>
+                        <div className="icon-box">
+                            <IonIcon icon={mailOutline} />
                         </div>
 
-                        <div class="contact-info">
-                            <p class="contact-title">Email</p>
+                        <div className="contact-info">
+                            <p className="contact-title">Email</p>
 
-                            <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
-                        </div>
-
-                    </li>
-
-                    <li class="contact-item">
-
-                        <div class="icon-box">
-                            <ion-icon name="phone-portrait-outline"></ion-icon>
-                        </div>
-
-                        <div class="contact-info">
-                            <p class="contact-title">Phone</p>
-
-                            <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+                            <a href="mailto:murias101010@gmail.com" className="contact-link">murias101010@gmail.com</a>
                         </div>
 
                     </li>
 
-                    <li class="contact-item">
+                    <li className="contact-item">
 
-                        <div class="icon-box">
-                            <ion-icon name="calendar-outline"></ion-icon>
+                        <div className="icon-box">
+                            <IonIcon icon={phonePortraitOutline} />
                         </div>
 
-                        <div class="contact-info">
-                            <p class="contact-title">Birthday</p>
+                        <div className="contact-info">
+                            <p className="contact-title">Phone</p>
 
-                            <time datetime="1982-06-23">June 23, 1982</time>
+                            <a href="tel:+34611498446" className="contact-link">+34 611 498 446</a>
                         </div>
 
                     </li>
 
-                    <li class="contact-item">
+                    <li className="contact-item">
 
-                        <div class="icon-box">
-                            <ion-icon name="location-outline"></ion-icon>
+                        <div className="icon-box">
+                            <IonIcon icon={calendarOutline} />
                         </div>
 
-                        <div class="contact-info">
-                            <p class="contact-title">Location</p>
+                        <div className="contact-info">
+                            <p className="contact-title">Birthday</p>
 
-                            <address>Sacramento, California, USA</address>
+                            <time dateTime="1998-06-23">June 23, 1998</time>
+                        </div>
+
+                    </li>
+
+                    <li className="contact-item">
+
+                        <div className="icon-box">
+                            <IonIcon icon={locationOutline} />
+                        </div>
+
+                        <div className="contact-info">
+                            <p className="contact-title">Location</p>
+
+                            <address>Oviedo, Asturias, Spain</address>
                         </div>
 
                     </li>
 
                 </ul>
 
-                <div class="separator"></div>
+                <div className="separator"></div>
 
-                <ul class="social-list">
-
-                    <li class="social-item">
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-facebook"></ion-icon>
+                <ul className="social-list">
+                    <li className="social-item">
+                        <a href="#" className="social-link">
+                            <IonIcon icon={logoFacebook} />
                         </a>
                     </li>
-
-                    <li class="social-item">
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-twitter"></ion-icon>
+                    <li className="social-item">
+                        <a href="#" className="social-link">
+                            <IonIcon icon={logoTwitter} />
                         </a>
                     </li>
-
-                    <li class="social-item">
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-instagram"></ion-icon>
+                    <li className="social-item">
+                        <a href="#" className="social-link">
+                            <IonIcon icon={logoInstagram} />
                         </a>
                     </li>
-
                 </ul>
 
             </div>
