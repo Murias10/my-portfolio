@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import './App.css';
 
+
+
 function App() {
   return (
     <Router>
@@ -13,8 +15,8 @@ function App() {
         <div className='main-content'>
           <Navbar />
           <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/my-portfolio/about" element={<About />} />
+            <Route path="/my-portfolio/projects" element={<Projects />} />
           </Routes>
         </div>
       </main>

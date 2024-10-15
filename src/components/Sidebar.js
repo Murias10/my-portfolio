@@ -1,9 +1,15 @@
 import './Sidebar.css';
-import myAvatar from '../assets/my-avatar.png';
+import MuriasAvatar from '../assets/murias-avatar2.png';
 
 
 import { IonIcon } from '@ionic/react';
 import { logoFacebook, logoTwitter, logoInstagram, chevronDown, mailOutline, phonePortraitOutline, calendarOutline, locationOutline } from 'ionicons/icons';
+
+const toggleSidebar = () => {
+    const sidebar = document.querySelector('[data-sidebar]');
+    sidebar.classList.toggle('active');
+}
+
 
 const Sidebar = () => {
     return (
@@ -12,7 +18,7 @@ const Sidebar = () => {
             <div className="sidebar-info">
 
                 <figure className="avatar-box">
-                    <img src={myAvatar} alt="Diego Murias Suárez" width="80" />
+                    <img src={MuriasAvatar} alt="Diego Murias Suárez" width="80" />
                 </figure>
 
                 <div className="info-content">
@@ -21,7 +27,7 @@ const Sidebar = () => {
                     <p className="title">Developer</p>
                 </div>
 
-                <button className="info_more-btn" data-sidebar-btn>
+                <button className="info_more-btn" data-sidebar-btn onClick={toggleSidebar}>
                     <span>Show Contacts</span>
                     <IonIcon icon={chevronDown} />
                 </button>
@@ -71,7 +77,7 @@ const Sidebar = () => {
                         <div className="contact-info">
                             <p className="contact-title">Birthday</p>
 
-                            <time dateTime="1998-06-23">June 23, 1998</time>
+                            <time dateTime="1998-06-23">Feb 10, 2003</time>
                         </div>
 
                     </li>
@@ -85,7 +91,7 @@ const Sidebar = () => {
                         <div className="contact-info">
                             <p className="contact-title">Location</p>
 
-                            <address>Oviedo, Asturias, Spain</address>
+                            <address>Gijón, Asturias, Spain</address>
                         </div>
 
                     </li>

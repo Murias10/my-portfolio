@@ -1,6 +1,40 @@
 import { useEffect } from 'react';
 import './Projects.css';
 import projects from '../data/projects';
+import Project1 from '../assets/project-1.jpg';
+import Project2 from '../assets/project-2.png';
+import Project3 from '../assets/project-3.jpg';
+import Project4 from '../assets/project-4.png';
+import Project5 from '../assets/project-5.png';
+import Project6 from '../assets/project-6.png';
+import Project7 from '../assets/project-7.png';
+import Project8 from '../assets/project-8.jpg';
+import Project9 from '../assets/project-9.png';
+
+
+const handleFilterClick = (e) => {
+
+    const category = e.target.textContent.toLowerCase();
+
+    // Eliminar la clase active de todos los links del filtro
+    const filterNavButtons = document.querySelectorAll('[data-filter-btn]');
+    filterNavButtons.forEach(item => item.classList.remove('active'));
+    // Añadir la clase active al link clicado
+    e.target.classList.add('active');
+
+    // Poner el texto del link clicado en el combo box
+    const selectValue = document.querySelector("[data-select-value]");
+    selectValue.textContent = e.target.textContent;
+
+    filterFunction(category);
+}
+
+
+const filterFunction = (category) => {
+
+}
+
+
 
 function Projects() {
 
@@ -9,7 +43,7 @@ function Projects() {
     }, []); // Se ejecuta una vez cuando el componente se monta
 
     return (
-        <article class="portfolio" data-page="portfolio">
+        <article class="portfolio active" data-page="portfolio">
 
             <header>
                 <h2 class="h2 article-title">Portfolio</h2>
@@ -20,15 +54,15 @@ function Projects() {
                 <ul class="filter-list">
 
                     <li class="filter-item">
-                        <button class="active" data-filter-btn>All</button>
+                        <button class="active" data-filter-btn onClick={handleFilterClick}>All</button>
                     </li>
 
                     <li class="filter-item">
-                        <button data-filter-btn>Applications</button>
+                        <button data-filter-btn onClick={handleFilterClick}>Web design</button>
                     </li>
 
                     <li class="filter-item">
-                        <button data-filter-btn>Web development</button>
+                        <button data-filter-btn onClick={handleFilterClick}>Applications</button>
                     </li>
 
                 </ul>
@@ -37,7 +71,7 @@ function Projects() {
 
                     <button class="filter-select" data-select>
 
-                        <div class="select-value" data-selecct-value>Select category</div>
+                        <div class="select-value" data-select-value>Select category</div>
 
                         <div class="select-icon">
                             <ion-icon name="chevron-down"></ion-icon>
@@ -77,7 +111,7 @@ function Projects() {
                                     <ion-icon name="eye-outline"></ion-icon>
                                 </div>
 
-                                <img src="./assets/images/project-7.png" alt="summary" loading="lazy" />
+                                <img src={Project7} alt="summary" loading="lazy" />
                             </figure>
 
                             <h3 class="project-title">Summary</h3>
@@ -95,7 +129,7 @@ function Projects() {
                                     <ion-icon name="eye-outline"></ion-icon>
                                 </div>
 
-                                <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy" />
+                                <img src={Project8} alt="task manager" loading="lazy" />
                             </figure>
 
                             <h3 class="project-title">Task Manager</h3>
@@ -113,7 +147,7 @@ function Projects() {
                                     <ion-icon name="eye-outline"></ion-icon>
                                 </div>
 
-                                <img src="./assets/images/project-9.png" alt="arrival" loading="lazy" />
+                                <img src={Project9} alt="arrival" loading="lazy" />
                             </figure>
 
                             <h3 class="project-title">Arrival</h3>

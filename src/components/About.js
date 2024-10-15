@@ -8,8 +8,12 @@ import logo1 from '../assets/logo-1-color.png';
 import logo2 from '../assets/logo-2-color.png';
 import logo3 from '../assets/logo-3-color.png';
 import logo4 from '../assets/logo-4-color.png';
-import logo5 from '../assets/logo-5-color.png';
-import logo6 from '../assets/logo-6-color.png';
+import appIcon from '../assets/icon-app.svg';
+import cameraIcon from '../assets/icon-photo.svg';
+import designIcon from '../assets/icon-design.svg';
+import devIcon from '../assets/icon-dev.svg';
+import quoteIcon from '../assets/icon-quote.svg';
+
 
 function About() {
 
@@ -18,7 +22,7 @@ function About() {
     }, []); // Se ejecuta una vez cuando el componente se monta
 
     return (
-        <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
 
             <header>
                 <h2 class="h2 article-title">About me</h2>
@@ -50,7 +54,7 @@ function About() {
                     <li class="service-item">
 
                         <div class="service-icon-box">
-                            <img src="./assets/images/icon-design.svg" alt="design icon" width="40" />
+                            <img src={designIcon} alt="design icon" width="40" />
                         </div>
 
                         <div class="service-content-box">
@@ -66,7 +70,7 @@ function About() {
                     <li class="service-item">
 
                         <div class="service-icon-box">
-                            <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40" />
+                            <img src={devIcon} alt="Web development icon" width="40" />
                         </div>
 
                         <div class="service-content-box">
@@ -82,7 +86,7 @@ function About() {
                     <li class="service-item">
 
                         <div class="service-icon-box">
-                            <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40" />
+                            <img src={appIcon} alt="mobile app icon" width="40" />
                         </div>
 
                         <div class="service-content-box">
@@ -98,7 +102,7 @@ function About() {
                     <li class="service-item">
 
                         <div class="service-icon-box">
-                            <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40" />
+                            <img src={cameraIcon} alt="camera icon" width="40" />
                         </div>
 
                         <div class="service-content-box">
@@ -186,7 +190,7 @@ function About() {
                             <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img />
                         </figure>
 
-                        <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+                        <img src={quoteIcon} alt="quote icon" />
                     </div>
 
                     <div class="modal-content">
@@ -212,7 +216,7 @@ function About() {
             </div>
 
 
-            <section class="clients">
+            {/* <section class="clients">
 
                 <h3 class="h3 clients-title">Clients</h3>
 
@@ -244,7 +248,7 @@ function About() {
 
                 </ul>
 
-            </section>
+            </section> */}
 
         </article>
     );
