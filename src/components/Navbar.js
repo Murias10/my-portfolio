@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // Optional: Navbar styles
+import './Navbar.css';
 
 const handleLinkClick = (e) => {
     const links = document.querySelectorAll('.navbar-link');
@@ -13,12 +13,11 @@ function Navbar() {
     return (
         <nav className="navbar">
             <ul className="navbar-list">
-
                 <li className="navbar-item">
-                    <Link className="navbar-link active" to="/my-portfolio/about" onClick={handleLinkClick}>About</Link>
+                    <Link className="navbar-link active" to="/" onClick={handleLinkClick}>About</Link>
                 </li>
                 <li className="navbar-item">
-                    <Link className="navbar-link" to="/my-portfolio/projects" onClick={handleLinkClick}>Projects</Link>
+                    <Link className="navbar-link" to="/projects" onClick={handleLinkClick}>Projects</Link>
                 </li>
             </ul>
         </nav>

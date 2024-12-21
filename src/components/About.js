@@ -30,17 +30,11 @@ function About() {
 
             <section class="about-text">
                 <p>
-                    I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-                    I enjoy
-                    turning complex problems into simple, beautiful and intuitive designs.
+                    Soy Diego Murias Suárez, un desarrollador apasionado por transformar ideas en soluciones prácticas. Disfruto enfrentando retos tecnológicos, explorando nuevas maneras de mejorar procesos y creando sistemas que realmente marquen la diferencia. Cada proyecto es una oportunidad para aprender, innovar y aportar valor con soluciones funcionales y bien diseñadas.
                 </p>
 
                 <p>
-                    My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-                    Moreover, I
-                    add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-                    across your
-                    message and identity in the most creative way. I created web design for many famous brand companies.
+                    Más allá del código, me motiva colaborar con equipos dinámicos y trabajar en proyectos que tengan un impacto real. Creo en la mejora constante, en el poder de las ideas frescas y en documentar cada paso del camino para crecer profesionalmente y ayudar a otros a hacerlo también. Siempre estoy listo para el próximo desafío.
                 </p>
             </section>
 
@@ -51,7 +45,7 @@ function About() {
 
                 <ul class="service-list">
 
-                    <li class="service-item">
+                    {/* <li class="service-item">
 
                         <div class="service-icon-box">
                             <img src={designIcon} alt="design icon" width="40" />
@@ -65,7 +59,7 @@ function About() {
                             </p>
                         </div>
 
-                    </li>
+                    </li> */}
 
                     <li class="service-item">
 
@@ -99,7 +93,7 @@ function About() {
 
                     </li>
 
-                    <li class="service-item">
+                    {/* <li class="service-item">
 
                         <div class="service-icon-box">
                             <img src={cameraIcon} alt="camera icon" width="40" />
@@ -113,14 +107,14 @@ function About() {
                             </p>
                         </div>
 
-                    </li>
+                    </li> */}
 
                 </ul>
 
             </section>
 
 
-            <section class="testimonials">
+            {/* <section class="testimonials">
 
                 <h3 class="h3 testimonials-title">Testimonials</h3>
 
@@ -172,7 +166,7 @@ function About() {
 
                 </ul>
 
-            </section>
+            </section> */}
 
 
             <div class="modal-container" data-modal-container>

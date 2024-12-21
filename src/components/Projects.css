@@ -11,6 +11,10 @@
     margin-bottom: 25px;
 }
 
+section.projects {
+    padding-top: 20px;
+}
+
 .filter-select {
     background: var(--eerie-black-2);
     color: var(--light-gray);
