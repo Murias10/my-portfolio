@@ -14,7 +14,7 @@ function Navbar() {
         <nav className="navbar">
             <ul className="navbar-list">
                 <li className="navbar-item">
-                    <Link className="navbar-link active" to="/" onClick={handleLinkClick}>About</Link>
+                    <Link className="navbar-link active" to="" onClick={handleLinkClick}>About</Link>
                 </li>
                 <li className="navbar-item">
                     <Link className="navbar-link" to="/projects" onClick={handleLinkClick}>Projects</Link>
