@@ -3,7 +3,7 @@ import MuriasAvatar from '../assets/murias-avatar2.png';
 
 
 import { IonIcon } from '@ionic/react';
-import { logoFacebook, logoTwitter, logoInstagram, chevronDown, mailOutline, phonePortraitOutline, calendarOutline, locationOutline } from 'ionicons/icons';
+import { logoGithub, logoLinkedin, chevronDown, mailOutline, phonePortraitOutline, calendarOutline, locationOutline } from 'ionicons/icons';
 
 const toggleSidebar = () => {
     const sidebar = document.querySelector('[data-sidebar]');
@@ -102,18 +102,13 @@ const Sidebar = () => {
 
                 <ul className="social-list">
                     <li className="social-item">
-                        <a href="#" className="social-link">
-                            <IonIcon icon={logoFacebook} />
+                        <a href="https://github.com/Murias10" className="social-link" target="_blank" rel="noreferrer">
+                            <IonIcon icon={logoGithub} />
                         </a>
                     </li>
                     <li className="social-item">
-                        <a href="#" className="social-link">
-                            <IonIcon icon={logoTwitter} />
-                        </a>
-                    </li>
-                    <li className="social-item">
-                        <a href="#" className="social-link">
-                            <IonIcon icon={logoInstagram} />
+                        <a href="#" className="social-link" target="_blank" rel="noreferrer">
+                            <IonIcon icon={logoLinkedin} />
                         </a>
                     </li>
                 </ul>
