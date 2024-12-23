@@ -15,8 +15,8 @@ function App() {
         <div className='main-content'>
           <Navbar />
           <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/portfolio/" element={<About />} />
+            <Route path="/portfolio/projects" element={<Projects />} />
           </Routes>
         </div>
       </main>
