@@ -12,7 +12,7 @@ function Navbar() {
                         className={({ isActive }) =>
                             isActive ? 'navbar-link active' : 'navbar-link'
                         }
-                        to="/portofolio"
+                        to="/portfolio"
                     >
                         About
                     </NavLink>
