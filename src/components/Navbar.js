@@ -7,12 +7,12 @@ function Navbar() {
         <nav className="navbar">
             <ul className="navbar-list">
                 <li className="navbar-item">
-                    {/* Usamos NavLink para gestionar automáticamente la clase activa */}
                     <NavLink
                         className={({ isActive }) =>
                             isActive ? 'navbar-link active' : 'navbar-link'
                         }
                         to="/portfolio"
+                        end
                     >
                         About
                     </NavLink>

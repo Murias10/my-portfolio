@@ -1,16 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Projects.css';
 import projectsData from '../data/projects';
-import Project1 from '../assets/project-1.jpg';
-import Project2 from '../assets/project-2.png';
-import Project3 from '../assets/project-3.jpg';
-import Project4 from '../assets/project-4.png';
-import Project5 from '../assets/project-5.png';
-import Project6 from '../assets/project-6.png';
-import Project7 from '../assets/project-7.png';
-import Project8 from '../assets/project-8.jpg';
-import Project9 from '../assets/project-9.png';
-
 
 
 function Projects() {
@@ -18,7 +8,7 @@ function Projects() {
     const [projects, setProjects] = useState([projectsData]);
 
     useEffect(() => {
-        document.title = "Projects - My Portfolio";
+        document.title = "My Portfolio - Projects";
         setProjects(projectsData);
     }, []); // Se ejecuta una vez cuando el componente se monta
 
@@ -111,7 +101,8 @@ function Projects() {
                             <a href={project.link} target="_blank" rel="noreferrer">
                                 <figure className="project-img">
                                     <div className="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                        {/* <ion-icon name="eye-outline"></ion-icon> */}
+                                        <ion-icon name="logo-github"></ion-icon>
                                     </div>
                                     <img src={project.image} alt={project.title} loading="lazy" />
                                 </figure>

@@ -18,7 +18,7 @@ import quoteIcon from '../assets/icon-quote.svg';
 function About() {
 
     useEffect(() => {
-        document.title = "About - My Portfolio";
+        document.title = "My Portfolio - About";
     }, []); // Se ejecuta una vez cuando el componente se monta
 
     return (

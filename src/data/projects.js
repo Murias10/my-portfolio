@@ -1,10 +1,10 @@
-import SaberYGanar from "../assets/projects/saber-y-ganar.jpg";
-import PythonmmCompiler from "../assets/projects/pythonmm-compiler.png";
+import SaberYGanar from "../assets/projects/saber-y-ganar.webp";
+import PythonmmCompiler from "../assets/projects/pythonmm-compiler.webp";
 
 
 const projects = [
     {
-        title: "Juego Saber y Ganar",
+        title: "Saber y Ganar",
         description: "Juego de preguntas y respuestas basado en la API de Wikidata.",
         category: "Web development",
         techStack: ["React", "Node.js", "MongoDB"],
